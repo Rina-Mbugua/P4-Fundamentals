@@ -1,4 +1,4 @@
-const repeatString = function() {
+const repeatString = function(str, num) {
 
     if (num < 0 || !Number.isInteger(num)) {
         return 'ERROR';
