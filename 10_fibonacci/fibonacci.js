@@ -1,12 +1,18 @@
 const fibonacci = function(n) {
-    const fibonacciSequence = [0, 1]; //start with the first two numbers of the sequence 
+    
+    if (n === 0) return 0;
+    if (n === 1) return 1;
 
-    for (let i = 2; i < n ; i++) {
-        const nextNumber = fibonacciSequence[i - 1] + fibonacciSequence[i - 2];
-        fibonacciSequence.push(nextNumber);
+    let prev = 0;
+    let current = 1;
+
+    for (let i = 2; i <= n; i++) {
+        const next = prev + current;
+        prev = current;
+        current = next;
     }
 
-    return fibonacciSequence
+    return current;
 };
 
 // Do not edit below this line
