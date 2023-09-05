@@ -10,8 +10,8 @@ const sum = function(arr) {
 	return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // this is a callback function.
 };
 
-const multiply = function() {
-
+const multiply = function(a, b) {
+  return (a * b)
 };
 
 const power = function() {
