@@ -1,6 +1,6 @@
 const convertToCelsius = function(fahrenheit) {
     const celsius = ((fahrenheit - 32) * (5/9)).toFixed(1);
-    return parserFloat(celsius); // Convert the result back to a number (optional).
+    return parseFloat(celsius); // Convert the result back to a number (optional).
 };
 
 
