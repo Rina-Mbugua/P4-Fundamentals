@@ -10,12 +10,12 @@ const sum = function(arr) {
 	return arr.reduce((accumulator, currentValue) => accumulator + currentValue, 0); // this is a callback function.
 };
 
-const multiply = function(a, b) {
-  return (a * b)
+const multiply = function(arr) {
+  return arr.reduce((accumulator, currentValue) => accumulator *  currentValue, 1);
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return (a ** b);
 };
 
 const factorial = function() {
