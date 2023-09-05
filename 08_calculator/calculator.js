@@ -22,9 +22,16 @@ const factorial = function(number) {
 	if (number < 0) {
     return "Factorial is undefined for negative numbers." 
   }
+
   if (number === 0 || number === 1) {
     return 1;
   }
+
+  let factorialNumber = 1
+  for (let i = 2; i <= number; i++) {
+    factorialNumber *= i;
+  }
+  return factorialNumber;
 };
 
 // Do not edit below this line
