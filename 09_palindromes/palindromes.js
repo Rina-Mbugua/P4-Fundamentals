@@ -1,6 +1,6 @@
 const palindromes = function (str) {
     //remove spaces and convert to lower case
-    const cleanStr = str.replace(/\s/g, '').toLowerCase();
+    const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
     //reverse the cleaned string
     const reversedStr = cleanStr.split('').reverse().join('');
