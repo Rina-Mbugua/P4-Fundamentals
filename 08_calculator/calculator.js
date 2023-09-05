@@ -31,7 +31,7 @@ const factorial = function(number) {
   for (let i = 2; i <= number; i++) {
     factorialNumber *= i;
   }
-  return factorialNumber;
+  return factorialNumber;   // a factorial of 5 would be 1*2*3*4*5. this for loop starts at 1 and adds the number and muliplies it until is reaches 'number' (5)
 };
 
 // Do not edit below this line
