@@ -2,9 +2,11 @@ const findTheOldest = function(people) {
     let oldestPerson = null;
     let maxAge = - Infinity;
 
+    const currentYear = new Date().getFullYear(); //this will replace yearOfDeath if the person is still living to get the current age.
+
     for (const person of people) { //person is a temporary variable to hold the values of the objects one by one as the loop is iterated.
         const birthYear = person.yearOfBirth;
-        const deathYear = person.yearOfDeath || new Date().getFullYear; //Assumes currect date if there is no yearOfDeath
+        const deathYear = person.yearOfDeath ||currentYear; //Assumes currect date if there is no yearOfDeath
         const age = deathYear - birthYear;
 
         if (age > maxAge) {
